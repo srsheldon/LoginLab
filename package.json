@@ -2,10 +2,11 @@
   "name": "loginlab",
   "version": "0.0.0",
   "description": "Login portal",
+  "private": true,
   "browser": "client/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config ./vendor/configuration/webpack/webpack.config.babel.js",
+    "start": "webpack-dev-server --config ./configuration/vendor/webpack/webpack.config.babel.js",
     "generate": "node --harmony --experimental-modules ./server/utilities/generateSecureServerFiles.mjs",
     "start:docs": "http-server ./docs -o"
   },
@@ -23,22 +24,22 @@
   },
   "homepage": "https://github.com/srsheldon/LoginLab#readme",
   "dependencies": {
-    "dialog-polyfill": "^0.5.3"
+    "dialog-polyfill": "^0.5.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@babel/node": "^7.10.5",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/preset-env": "^7.11.0",
-    "@babel/register": "^7.10.5",
-    "babel-loader": "^8.1.0",
-    "clean-webpack-plugin": "^3.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "http-server": "^0.12.3",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/register": "^7.15.3",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-loader": "^3.0.0",
+    "html-webpack-plugin": "^5.4.0",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
   },
   "babel": {
     "extends": "./vendor/configuration/babel/babel.config.js"
